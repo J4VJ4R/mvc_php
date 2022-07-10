@@ -1,9 +1,12 @@
 <?php
 
-class Errors
+class Errors extends Controller
 {
     function __construct()
     {
-        echo "<p>Error al cargar recurso</p>";
+        parent::__construct();
+        $this->view->mensaje = "Generic Error ";
+        $this->view->render('error/index');
+        // echo "<p>Error al cargar recurso</p>";
     }
 }
