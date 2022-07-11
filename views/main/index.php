@@ -9,7 +9,12 @@
 </head>
 
 <body>
+    <?php require 'views/main/header.php' ?>
 
+    <div id="main">
+        <h1 class="center">Welcome to our site</h1>
+    </div>
+
+    <?php require 'views/main/footer.php' ?>
 </body>
-<h1>This is the view of main</h1>
 </html>
